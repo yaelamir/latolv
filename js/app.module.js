@@ -2,6 +2,7 @@
   'use strict';
 
   angular
-    .module('app', [])}
+    .module('app', ['ui.router', 'ui.bootstrap'])
 
-)();
+
+})();
