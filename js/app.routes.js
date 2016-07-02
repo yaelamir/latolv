@@ -11,17 +11,17 @@
     $stateProvider
       .state('welcome', {
         url:         '/welcome',
-        templateUrl: '/js/welcome.html'
+        templateUrl: '/js/layouts/welcome.html'
       })
       .state('events', {
         url:         '/event',
-        templateUrl: '/js/event.html'
+        templateUrl: '/js/layouts/event.html'
       })
       .state('contact', {
         url:         '/contact',
-        templateUrl: '/js/contact.html'
+        templateUrl: '/js/layouts/contact.html'
       });
 
-      $urlRouterProvider.otherwise('/');
+      $urlRouterProvider.otherwise('/welcome');
   }
 })();
