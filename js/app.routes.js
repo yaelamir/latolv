@@ -10,8 +10,10 @@
   function appRoutes($urlRouterProvider, $stateProvider) {
     $stateProvider
       .state('welcome', {
-        url:         '/welcome',
-        templateUrl: '/js/layouts/welcome.html'
+        url:          '/welcome',
+        templateUrl:  '/js/layouts/welcome.html',
+        controller:   'WelcomeController',
+        controllerAs: 'vm'
       })
       .state('events', {
         url:         '/event',

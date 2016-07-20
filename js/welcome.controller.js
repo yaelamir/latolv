@@ -5,27 +5,40 @@
     .module('app')
     .controller('WelcomeController', WelcomeController);
 
-  WelcomeController.$inject = ['$log', '$state', '$scope'];
+  WelcomeController.$inject = ['$log', '$state'];
 
-  function WelcomeController($log, $state, $scope) {
+  function WelcomeController($log, $state) {
+    var vm = this;
+
     $log.info('WelcomeController loaded');
-    $('.carousel').carousel({
-      interval: 2000
-    })
-    // var vm = this;
 
-    // $scope.myInterval = 4000;
-    // $scope.slides = [
-    //   {
-    //     image: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg'
-    //   },
-    //   {
-    //     image: 'http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg'
-    //   }
-    // ];
-    // $('.carousel').carousel({
-    //   interval: 2000
-    // })
-  }
+    vm.eventsList = [
+      {
+        dj: "Khai & Cyn",
+        date: "Friday, August 1st",
+        venue: "Avalon",
+        image: "http://avalonhollywood.com/wp-content/uploads/2016/06/070116_khai_cyn.jpg"
+      },
+      {
+        dj: "Dirty South",
+        date: "Saturday, August 2nd",
+        venue: "Avalon",
+        image: "http://avalonhollywood.com/wp-content/uploads/2016/05/070216_avalon_lg.jpg"
+      },
+      {
+        dj: "Branchez",
+        date: "Friday, July 22nd",
+        venue: "Create",
+        image: "https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3414/1/logo/branchez-w-vincent.jpg"
+      },
+      {
+        dj: "Nathan Scott",
+        date: "Saturday, July 23rd",
+        venue: "Create",
+        image: "https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3412/1/logo/sultan-shepard-support-nathan-scott.jpg"
+      }
+    ];
+
+  };
 
 })();

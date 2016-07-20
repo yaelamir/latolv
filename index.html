@@ -9,6 +9,7 @@
   <!-- stylesheets -->
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.js"></script> -->
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
@@ -23,20 +24,25 @@
 <body>
   <div class="container-fluid">
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top right">
+      <nav class="navbar navbar-fixed-top">
         <ul class="nav navbar-nav">
-          <a ui-sref="welcome" class="btn navbar-btn navbar-right">ABOUT</a>
-          <a ui-sref="welcome" class="btn navbar-btn navbar-right">SOCIAL</a>
-          <a ui-sref="welcome" class="btn navbar-btn navbar-right">VENUES</a>
-          <a ui-sref="events" class="btn navbar-btn navbar-right">EVENTS</a>
-          <a ui-sref="contact" class="btn navbar-btn navbar-right">CONTACT</a>
-          <a ui-sref="welcome" class="btn navbar-btn navbar-right">HOME</a>
+          <div class="navbar-header">
+            <a ui-sref="welcome" class="navbar-brand" ui-sref-active="active">
+              <img alt="LAtoLV" src="https://i.imgur.com/yztKkKv.png">
+            </a>
+          </div>
+          <a ui-sref="welcome" ui-sref-active="active" class="btn navbar-btn">EVENTS</a>
+          <a ui-sref="events" ui-sref-active="active" class="btn navbar-btn">VENUES</a>
+          <a ui-sref="contact" ui-sref-active="active" class="btn navbar-btn">CONTACT</a>
+          <!-- <a ui-sref="welcome" ui-sref-active="active" class="btn navbar-btn navbar-right">ABOUT</a> -->
+          <!-- <a ui-sref="welcome" ui-sref-active="active" class="btn navbar-btn navbar-right">SOCIAL</a> -->
+          <!-- <a ui-sref="welcome" ui-sref-active="active" class="btn navbar-btn navbar-right">VENUES</a> -->
         </ul>
       </nav>
-      <h1>AngularJS</h1>
+
     </header>
     <main class="content" ui-view>
-
+      <h1><a ui-sref="welcome">LA2LV</a></h1>
     </main>
   </div>
     <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
