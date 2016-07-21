@@ -13,12 +13,34 @@
       <div ng-show="showCreate">
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail events">
+            <!-- <img class="image" ng-click="myStyle={'display': 'none'}" ng-style="myStyle" ng-src={{event.image}}> -->
             <img class="image" ng-src={{event.image}}>
             <div class="caption">
               <h3 class="event-info"> {{ event.dj | uppercase }} </h3>
               <h4 class="event-info"> {{ event.date }} </h4>
-              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
-              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+              <div>
+                <a href="#" class="btn btn-secondary" role="button">Tickets</a>
+                <a href="#" class="btn btn-secondary" role="button">Tables</a>
+                <a href="#" class="btn btn-secondary" role="button" ng-click="showInfo = !showInfo">Info</a>
+              </div>
+            </div>
+            <div ng-show="showInfo">
+              <div class="icons">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span>{{ event.info }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                <span>{{ event.time }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.location}}">{{ event.addy }}</a>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.link}}">{{ event.website }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -38,8 +60,29 @@
             <div class="caption">
               <h3 class="event-info">{{ event.dj | uppercase }}</h3>
               <h4 class="event-info">{{ event.date }}</h4>
-              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
-              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+              <div>
+                <a href="#" class="btn btn-secondary" role="button">Tickets</a>
+                <a href="#" class="btn btn-secondary" role="button">Tables</a>
+                <a href="#" class="btn btn-secondary" role="button" ng-click="showInfo = !showInfo">Info</a>
+              </div>
+            </div>
+            <div ng-show="showInfo">
+              <div class="icons">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span>{{ event.info }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                <span>{{ event.time }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.location}}">{{ event.addy }}</a>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.link}}">{{ event.website }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -59,8 +102,29 @@
             <div class="caption">
               <h3 class="event-info">{{ event.dj | uppercase }}</h3>
               <h4 class="event-info">{{ event.date }}</h4>
-              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
-              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+              <div>
+                <a href="#" class="btn btn-secondary" role="button">Tickets</a>
+                <a href="#" class="btn btn-secondary" role="button">Tables</a>
+                <a href="#" class="btn btn-secondary" role="button" ng-click="showInfo = !showInfo">Info</a>
+              </div>
+            </div>
+            <div ng-show="showInfo">
+              <div class="icons">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span>{{ event.info }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                <span>{{ event.time }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.location}}">{{ event.addy }}</a>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.link}}">{{ event.website }}</a>
+              </div>
             </div>
           </div>
         </div>
@@ -80,8 +144,29 @@
             <div class="caption">
               <h3 class="event-info">{{ event.dj | uppercase }}</h3>
               <h4 class="event-info">{{ event.date }}</h4>
-              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
-              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+              <div>
+                <a href="#" class="btn btn-secondary" role="button">Tickets</a>
+                <a href="#" class="btn btn-secondary" role="button">Tables</a>
+                <a href="#" class="btn btn-secondary" role="button" ng-click="showInfo = !showInfo">Info</a>
+              </div>
+            </div>
+            <div ng-show="showInfo">
+              <div class="icons">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span>{{ event.info }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                <span>{{ event.time }}</span>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.location}}">{{ event.addy }}</a>
+              </div>
+              <div class="icons">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <a class="links" target="_blank" href="{{event.link}}">{{ event.website }}</a>
+              </div>
             </div>
           </div>
         </div>

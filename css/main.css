@@ -87,16 +87,32 @@ nav {
   opacity: 0.6;
 }
 
+/*.image:click {
+  opacity: 0;
+}
+*/
+
+/*icons*/
+.glyphicon {
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.glyphicon:hover {
+  opacity: 0.6;
+}
 
 
+.icons {
+  text-align: left;
+}
 
-
-
-
-
-
-
-
+/*remove text decoration from thumbnail info links*/
+.links {
+  text-decoration: none;
+  color: black;
+}
 
 
 
