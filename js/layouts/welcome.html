@@ -1,240 +1,93 @@
 <!-- <h1 class="events_title">Upcoming Events</h1> -->
 
+<!-- <img src="https://i.imgur.com/FBZ19UL.png" alt="Events"> -->
 <div ng-controller="WelcomeController as events">
-  <div ng-repeat="event in events.eventsList | filter: { 'venue': 'Avalon' }">
-    <p>venue: {{ event.venue }}</p>
-  </div>
 
 
 
 
-<!--**************************** CREATE ****************************-->
-<br>
-<span ng-click="showCreate = !showCreate" class="event_titles"><h1>CREATE</h1></span>
-<div ng-show="showCreate" class="container">
+  <!--**************************** CREATE ****************************-->
   <div class="row">
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail events">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3208/1/media/media7388.jpg">
-        <div class="caption">
-          <h4>Chromeo DJ Set | Noize Fridays at CREATE NIGHTCLUB</h4>
-          <h4>Firday July 1st</h4>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3209/1/media/media7394.jpg">
-        <div class="caption">
-          <h3>Dzeko & Torres | Arcade Saturdays at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3249/1/media/media7550.jpg">
-        <div class="caption">
-          <h3>Lil Jon DJ set | Fourth of July Weekend at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3293/1/media/media7645.jpg">
-        <div class="caption">
-          <h3>John Dahlback| Arcade Saturdays at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
+    <span ng-click="showCreate = !showCreate" class="event_titles container"><h1>CREATE</h1></span>
+    <div ng-repeat="event in events.eventsList | filter: { 'venue': 'Create' }">
+      <div ng-show="showCreate">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail events">
+            <img class="image" ng-src={{event.image}}>
+            <div class="caption">
+              <h3 class="event-info"> {{ event.dj | uppercase }} </h3>
+              <h4 class="event-info"> {{ event.date }} </h4>
+              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
+              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<!--**************************** SOUND ****************************-->
-<br>
-<br>
-<br>
-<br>
-<span ng-click="showSound = !showSound" class="event_titles"><h1>SOUND</h1></span>
-<div ng-show="showSound" class="container">
+  <!--**************************** SOUND ****************************-->
+
   <div class="row">
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail events">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3208/1/media/media7388.jpg">
-        <div class="caption">
-          <h3>Green Velvet & Isiah Martin | SOUND NIGHTCLUB</h3>
-          <h3>Firday July 1st</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://s3.amazonaws.com/webassets.ticketmob.com/ES/templates/images/soundnightclubnew/infected-mushroom-homeslide.png">
-        <div class="caption">
-          <h3>Infected Mushroom DJ Set | SOUND NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3249/1/media/media7550.jpg">
-        <div class="caption">
-          <h3>Trent Cantrelle Extended set | Fourth of July Weekend at SOUND NIGHTCLUB</h3>
-          <h3>Sunday July 3rd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3293/1/media/media7645.jpg">
-        <div class="caption">
-          <h3>&Me Saand Presa | Fourth of July Weekend at SOUND NIGHTCLUB</h3>
-          <h3>Monday July 4th</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
+  <span ng-click="showSound = !showSound" class="event_titles container"><h1>SOUND</h1></span>
+    <div ng-repeat="event in events.eventsList | filter: { 'venue': 'Sound' }">
+      <div ng-show="showSound">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail events">
+            <img class="image" ng-src={{event.image}}>
+            <div class="caption">
+              <h3 class="event-info">{{ event.dj | uppercase }}</h3>
+              <h4 class="event-info">{{ event.date }}</h4>
+              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
+              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<!--**************************** AVALON ****************************-->
-<br>
-<br>
-<br>
-<br>
-<span ng-click="showAvalon = !showAvalon" class="event_titles"><h1>AVALON</h1></span>
-<div ng-show="showAvalon" class="container">
+  <!--**************************** AVALON ****************************-->
+
   <div class="row">
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail events">
-        <img src="http://avalonhollywood.com/wp-content/uploads/2016/06/070116_avalon_lg.jpg">
-        <div class="caption">
-          <h3>Khai & Cyn | AVALON HOLLYWOOD</h3>
-          <h3>Firday July 1st</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3209/1/media/media7394.jpg">
-        <div class="caption">
-          <h3>Dzeko & Torres | Arcade Saturdays at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3249/1/media/media7550.jpg">
-        <div class="caption">
-          <h3>Lil Jon DJ set | Fourth of July Weekend at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3293/1/media/media7645.jpg">
-        <div class="caption">
-          <h3>Lil Jon DJ set | Fourth of July Weekend at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
+    <span ng-click="showAvalon = !showAvalon" class="event_titles container"><h1>AVALON</h1></span>
+    <div ng-repeat="event in events.eventsList | filter: { 'venue': 'Avalon' }">
+      <div ng-show="showAvalon">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail events">
+            <img class="image" ng-src={{event.image}}>
+            <div class="caption">
+              <h3 class="event-info">{{ event.dj | uppercase }}</h3>
+              <h4 class="event-info">{{ event.date }}</h4>
+              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
+              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- ****************************** SLS ****************************** -->
-<br>
-<br>
-<br>
-<br>
-<span ng-click="showAvalon = !showAvalon" class="event_titles"><h1>SLS</h1></span>
-<div ng-show="showAvalon" class="container">
+
+  <!-- ****************************** SLS ****************************** -->
+
   <div class="row">
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail events">
-        <img src="http://avalonhollywood.com/wp-content/uploads/2016/06/070116_avalon_lg.jpg">
-        <div class="caption">
-          <h3>Khai & Cyn | AVALON HOLLYWOOD</h3>
-          <h3>Firday July 1st</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3209/1/media/media7394.jpg">
-        <div class="caption">
-          <h3>Dzeko & Torres | Arcade Saturdays at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3249/1/media/media7550.jpg">
-        <div class="caption">
-          <h3>Lil Jon DJ set | Fourth of July Weekend at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3293/1/media/media7645.jpg">
-        <div class="caption">
-          <h3>Lil Jon DJ set | Fourth of July Weekend at CREATE NIGHTCLUB</h3>
-          <h3>Saturday July 2nd</h3>
-          <p><a href="#" class="btn btn-primary" role="button">Tickets</a>
-          <a href="#" class="btn btn-primary" role="button">Tables</a></p>
+  <span ng-click="showSls = !showSls" class="event_titles container"><h1>SLS</h1></span>
+    <div ng-repeat="event in events.eventsList | filter: { 'venue': 'SLS' }">
+      <div ng-show="showSls">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail events">
+            <img class="image" ng-src={{event.image}}>
+            <div class="caption">
+              <h3 class="event-info">{{ event.dj | uppercase }}</h3>
+              <h4 class="event-info">{{ event.date }}</h4>
+              <p><a href="#" class="btn btn-secondary" role="button">Tickets</a>
+              <a href="#" class="btn btn-secondary" role="button">Tables</a></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
 

@@ -4,14 +4,15 @@
 
 body {
   padding: 70px;
-
   text-align: center;
 }
 
-#events {
+/*#events {
   max-height: 252px;
   min-height: 252px;
-}
+}*/
+
+/*event titles on events page*/
 
 .events_title {
   font-weight: 900;
@@ -41,23 +42,64 @@ body {
 
 }
 
+/*margin to the right of navbar*/
 .navbar-right {
   margin-right: auto;
 }
 
+/*navbar logo*/
 .navbar-brand > img {
   width: 100px;
 }
 
+/*navbar buttons*/
 .navbar-btn {
   margin-top: 20px;
   color: black;
 }
 
+/*also nav background color*/
 nav {
   background-color: white;
 }
 
+/*navbar background color*/
 .nav .navbar-nav {
   background-color: white;
 }
+
+/*make event thumbnails inline*/
+.thumbnail .events {
+  display: inline;
+}
+
+/*event info on event thumbnails*/
+.event-info {
+  cursor: default;
+}
+
+/*thumbnail images*/
+.image {
+  opacity: 1;
+}
+
+.image:hover {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

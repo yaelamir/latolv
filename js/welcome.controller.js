@@ -16,7 +16,7 @@
       {
         dj: "Khai & Cyn",
         date: "Friday, August 1st",
-        venue: "Avalon",
+        venue: "Sound",
         image: "http://avalonhollywood.com/wp-content/uploads/2016/06/070116_khai_cyn.jpg"
       },
       {
@@ -34,8 +34,14 @@
       {
         dj: "Nathan Scott",
         date: "Saturday, July 23rd",
-        venue: "Create",
+        venue: "SLS",
         image: "https://d1w5e52g85ucd3.cloudfront.net/static/images/external/img/create/3412/1/logo/sultan-shepard-support-nathan-scott.jpg"
+      },
+      {
+        dj: "Goldfish",
+        date: "Saturday, July 23rd",
+        venue: "Avalon",
+        image: "http://avalonhollywood.com/wp-content/uploads/2016/06/072316_avalon_lg.jpg"
       }
     ];
 
